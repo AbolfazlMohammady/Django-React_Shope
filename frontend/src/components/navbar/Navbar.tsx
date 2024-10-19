@@ -8,15 +8,15 @@ interface NavbarLiItemsProps {
 
 function Navbar() {
   return (
-    <div className="h-14 border-b shadow flex items-center">
+    <div className="h-10 border-b shadow flex items-center">
       <Container>
         <div className="flex  flex-row-reverse items-center">
-          <ul className="w-full flex justify-evenly flex-row-reverse">
+          <ul className="w-full md:w-[70%] px-2 flex gap-3 justify-end items-center flex-row">
             <NavbarLiItems nameItem="پوشاک" />
             <NavbarLiItems nameItem="لوازم آرایشی" />
-            <NavbarLiItems nameItem="لوازم خانگی" />
             <NavbarLiItems nameItem="سلامت" />
             <NavbarLiItems nameItem="فروشگاه" />
+            <NavbarLiItems nameItem="لوازم خانگی" />
           </ul>
         </div>
       </Container>
@@ -39,7 +39,7 @@ function NavbarLiItems({ nameItem }: NavbarLiItemsProps) {
 
   return (
     <li
-      className="ml-4 flex items-center relative"
+      className=" flex items-center relative"
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
@@ -54,7 +54,7 @@ function NavbarLiItems({ nameItem }: NavbarLiItemsProps) {
       </span>
       <a>{nameItem}</a>
       {showPopup && (
-        <ul className="absolute z-10 mt-60 bg-white shadow-md p-4 w-40">
+        <ul className="absolute z-10 mt-52 bg-white shadow-md p-2 w-max rounded-lg ">
           <li className="py-2 hover:bg-gray-100">
             <a>Sub-item 1</a>
           </li>
