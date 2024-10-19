@@ -7,10 +7,10 @@ function Header() {
   return (
     <>
       {/* header */}
-      <div className=" h-16  flex items-center ">
+      <div className=" flex items-center p-1">
         <Container>
-          <div className="flex justify-between flex-row-reverse items-center">
-            <div className="flex justify-between items-center flex-row-reverse w-2/4">
+          <div className=" w-full px-2 flex justify-between flex-col md:items-center md:justify-between md:flex-row-reverse md:gap-3 ">
+            <div className="w-full flex  items-center flex-row-reverse ">
               {/* logo */}
               <div>
                 <img
@@ -23,13 +23,13 @@ function Header() {
               {/* Search bar */}
               <SearchBar />
             </div>
-            <div className="flex justify-around items-center flex-row-reverse w-1/4">
+            <div className="w-max flex items-center ">
               {/* login or sing in */}
-              <div className="ml-4">ورود / ثبت نام</div>
               {/* Shopping Cart */}
-              <div className=" w-8 h-8">
-                <FaShoppingCart className=" w-full h-full" />
+              <div className=" w-max h-max ">
+                <FaShoppingCart className=" w-8 h-8 " />
               </div>
+              <div className="ml-4 text-nowrap">ورود / ثبت نام</div>
             </div>
           </div>
         </Container>
