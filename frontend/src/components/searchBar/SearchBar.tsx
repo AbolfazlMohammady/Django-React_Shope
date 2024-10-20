@@ -3,7 +3,7 @@ import React from "react";
 function SearchBar() {
   return (
     <>
-      <div className="  justify-between items-center h-8  rounded-sm bg-slate-200 mr-5 py-1 px-1 ">
+      <div className=" flex justify-between items-center h-10 w-[70%] rounded-sm bg-slate-200 mr-5 py-1 px-1 ">
         <div className="px-2 py-1 border-slate-400 border-r-2 ">
           <FaSearch />
         </div>

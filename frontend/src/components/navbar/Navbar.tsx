@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <div className=" border-b shadow flex items-center py-2">
       <Container>
-        <div className="flex  flex-row-reverse items-center">
-          <ul className="w-full md:w-[70%]  px-2 flex gap-3 flex-wrap justify-end items-center flex-row">
+        <div className="flex  flex-row-reverse items-center p-3">
+          <ul className="w-full md:w-[70%]  px-2 flex gap-8 flex-wrap justify-end items-center flex-row">
             <NavbarLiItems nameItem="پوشاک" />
             <NavbarLiItems nameItem="لوازم آرایشی" />
             <NavbarLiItems nameItem="سلامت" />

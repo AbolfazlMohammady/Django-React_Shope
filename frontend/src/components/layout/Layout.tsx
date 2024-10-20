@@ -9,6 +9,7 @@ function Layout({ children }: ILayout) {
   return (
     <>
       <Header />
+
       {children}
     </>
   );
