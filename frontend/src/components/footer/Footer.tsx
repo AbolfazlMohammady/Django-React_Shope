@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../container/Container";
 function Footer() {
   return (
-    <footer className="bg-slate-800 text-right text-white h-[350px] bottom-0 ">
+    <footer className="bg-slate-800 text-right text-white h-[350px] bottom-0 mt-10">
       <Container>
         <div className="w-[100%] py-8 flex  justify-center  gap-14 flex-row-reverse ">
           <div className="w-[30%] ">
@@ -14,7 +14,7 @@ function Footer() {
             </P>
           </div>
 
-          <div className="flex flex-col gap-4 w-[30%]">
+          <div className="flex flex-col gap-4 w-[30%] border-r-2 border-slate-300 pr-3">
             <H1>نیاز به راهنمایی دارید؟</H1>
 
             <div className="flex flex-col gap-3 ">
