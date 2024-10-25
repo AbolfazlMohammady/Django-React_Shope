@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.swiper-button-next , .swiper-button-prev{
+    background-color: rgba(253, 253, 253, 0.738);
+    width: 30px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+.swiper-button-next::after , .swiper-button-prev::after{
+    color: black;
+    font-size: 30px;
+}
