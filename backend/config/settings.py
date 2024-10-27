@@ -39,9 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third Party Apps
-    "debug_toolbar",
     'rest_framework',
+    'rest_framework_simplejwt',
+    "debug_toolbar",
     'djoser',
+
+
+    # My app
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -151,9 +156,13 @@ SIMPLE_JWT = {
    'ACCESS_TOKEN_LIFETIME': timedelta(days=1)
 }
 
-# DJOSER = {
-#     'SERIALIZERS':{
-#         'user_create': 'core.serializer.UserCreateSerializer',
-#         'current_user': 'core.serializer.UserSerializer',
-#     }
-# }
+DJOSER = {
+    'SERIALIZERS':{
+        'user_create': 'core.serializers.UserCreateSerializer',
+        'current_user': 'core.serializers.UserSerializer',
+    },
+}
+
+
+# Config User
+AUTH_USER_MODEL= 'core.User'
