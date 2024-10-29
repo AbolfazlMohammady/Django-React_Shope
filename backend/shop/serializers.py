@@ -4,15 +4,15 @@ from . import models
 
 
 
-class CollectionSeializer(serializers.ModelSerializer):
+class CollectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Collection
         fields= ['id', 'name']
 
 
 
-class CategorySeializer(serializers.ModelSerializer):
-    collection= CollectionSeializer(read_only = True)
+class CategorySerializer(serializers.ModelSerializer):
+    collection= CollectionSerializer(read_only = True)
 
     class Meta:
         model = models.Category
@@ -28,9 +28,9 @@ class BrandSeializer(serializers.ModelSerializer):
 
 
 class ProductSeializer(serializers.ModelSerializer):
-    category= CategorySeializer(read_only = True)
+    category= CategorySerializer(read_only = True)
     brand= BrandSeializer(read_only = True)
 
     class Meta:
         model = models.Product
-        fields= ('name', 'description', 'price', 'image', 'created_at', 'update_at', 'category', 'brand', )
+        fields= ('id','name', 'description', 'price', 'image', 'category', 'brand', )

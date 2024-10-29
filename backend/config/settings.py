@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     "debug_toolbar",
     'djoser',
+    'django_filters',
+
 
 
     # My app
@@ -173,3 +175,8 @@ AUTH_USER_MODEL= 'core.User'
 #Config Media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+
+
+
+

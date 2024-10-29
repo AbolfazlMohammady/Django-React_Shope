@@ -13,7 +13,7 @@ class Collection(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=255, unique=True)
-    collection = models.ForeignKey(Collection, on_delete=models.CASCADE)
+    collection = models.ForeignKey(Collection, on_delete=models.CASCADE, related_name='categories')
 
     def __str__(self):
         return self.name
@@ -26,14 +26,6 @@ class Brand(models.Model):
 
     def __str__(self):
         return self.name
-
-
-# @receiver(pre_delete, sender=Brand)
-# def delete_logo_on_delete(sender, instance, **kwargs):
-#     print("سیگنال pre_delete فراخوانی شد")
-#     if instance.logo:
-#         if os.path.isfile(instance.logo.path):
-#             os.remove(instance.logo.path)
 
 
 
