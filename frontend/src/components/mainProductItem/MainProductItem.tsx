@@ -5,13 +5,13 @@ function Main() {
   return (
     <div className="my-4">
       <Container>
-        <div className="flex flex-col justify-center items-center gap-2 sm:flex-row sm:flex-row-reverse">
-          <ImgProduct />
+        <div className="flex flex-col justify-center items-center gap-2 sm:flex-row ">
           <div className="flex flex-col items-center gap-2">
             <Information />
             <Inputs />
             <AddProduct />
           </div>
+          <ImgProduct />
         </div>
       </Container>
     </div>
@@ -33,12 +33,14 @@ function Information() {
       <h1 className="text-xl font-bold w-[70%] text-right mb-3">
         یخچال و فریزر ساید بای ساید 35فوت اسنوا مدل SN8-3035SS
       </h1>
-      {/* stars and more...*/}
-      <div>⭐⭐⭐⭐⭐</div>
-      <h3>دیدگاه کاربران</h3>
-      <div className="px-5 py-2 rounded-md bg-[#888da8] text-white">
-        موجود در انبار
-        <span className="m-1">✅</span>
+      <div className="flex flex-col items-center gap-2 pb-4 sm:flex-row">
+        {/* stars and more...*/}
+        <div className="px-5 py-2 rounded-md bg-[#888da8] text-white">
+          موجود در انبار
+          <span className="m-1">✅</span>
+        </div>
+        <h3>دیدگاه کاربران</h3>
+        <div>⭐⭐⭐⭐⭐</div>
       </div>
       {/* many$ */}
       <div className="text-[#fb3449] text-2xl flex gap-2">
@@ -80,14 +82,20 @@ function AddProduct() {
           را دنبال کنید.
           <span className="m-1 p-1 bg-slate-300">❤</span>
         </h5>
-        {/* img */}
-        <div className="w-40 h-40">
-          <img src="https://cdnfa.com/businesses/982e/files/normal/8924374.jpg" />
+        <div className="flex flex-col items-center gap-2 sm:flex-row">
+          {/*  */}
+          <div className="flex flex-col items-center gap-2">
+            <h6 className="w-[70%] text-center">
+              سوالی دارید؟ از کارشناسان زنبیل بپرسید
+            </h6>
+            <h2 className="w-[70%] text-center text-sky-700">گفتگوی آنلاین</h2>
+          </div>
+          {/*  */}
+          {/* img */}
+          <div className="w-40 h-40">
+            <img src="https://cdnfa.com/businesses/982e/files/normal/8924374.jpg" />
+          </div>
         </div>
-        <h6 className="w-[70%] text-center">
-          سوالی دارید؟ از کارشناسان زنبیل بپرسید
-        </h6>
-        <h2 className="w-[70%] text-center text-sky-700">گفتگوی آنلاین</h2>
       </div>
       <div className="flex justify-center flex-row-reverse gap-3 text-center">
         <h3>دسته بندی: یخچال فریزر</h3>
