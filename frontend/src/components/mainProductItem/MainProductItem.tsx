@@ -5,13 +5,13 @@ function Main() {
   return (
     <div className="my-4">
       <Container>
-        <div className="flex flex-col justify-center items-center gap-2 sm:flex-row ">
+        <div className="flex flex-col justify-center items-center gap-2 sm:flex-row-reverse">
+          <ImgProduct />
           <div className="flex flex-col items-center gap-2">
             <Information />
             <Inputs />
             <AddProduct />
           </div>
-          <ImgProduct />
         </div>
       </Container>
     </div>
@@ -30,8 +30,8 @@ function ImgProduct() {
 function Information() {
   return (
     <div className="flex flex-col items-center gap-2 pb-4 border-b ">
-      <h1 className="text-xl font-bold w-[70%] text-right mb-3">
-        یخچال و فریزر ساید بای ساید 35فوت اسنوا مدل SN8-3035SS
+      <h1 className="text-xl font-bold w-[100%] text-right mb-3">
+        SN8-3035SS یخچال و فریزر ساید بای ساید 35فوت اسنوا مدل
       </h1>
       <div className="flex flex-col items-center gap-2 pb-4 sm:flex-row">
         {/* stars and more...*/}
@@ -85,7 +85,7 @@ function AddProduct() {
         <div className="flex flex-col items-center gap-2 sm:flex-row">
           {/*  */}
           <div className="flex flex-col items-center gap-2">
-            <h6 className="w-[70%] text-center">
+            <h6 className="w-[100%] text-center">
               سوالی دارید؟ از کارشناسان زنبیل بپرسید
             </h6>
             <h2 className="w-[70%] text-center text-sky-700">گفتگوی آنلاین</h2>
