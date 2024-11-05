@@ -138,7 +138,7 @@ const SliderProducts: React.FC<Categorys & Brands & Products> = ({ categorys, br
     {products &&
      products.map((item, k) => (
       <SwiperSlide key={k} className=" w-full h-[350px]d bg-red-500d p-2 my-1 flex flex-col items-end justify-center rounded-xl shadow-sm shadow-black">
-       <NavLink to={item.idproduct} className={` w-full h-full flex gap-4 flex-col items-end justify-center `}>
+       <NavLink to={`/showproduct/${item.idproduct}`} className={` w-full h-full flex gap-4 flex-col items-end justify-center `}>
         <img className=" w-full h-[210px] sm:h-[160px]s object-fill rounded-xl" src={item.imgproduct} alt="product img" />
         <p className="w-full text-center text-nowrap">{item.nameproduct}</p>
         <p className=" text-nowrap text-[14px] flex  items-center">
@@ -157,7 +157,7 @@ const SliderProducts: React.FC<Categorys & Brands & Products> = ({ categorys, br
         </p>
        </NavLink>
        <NavLink
-        to={item.idproduct}
+        to={`/showproduct/${item.idproduct}`}
         className={` block h-[40px] mt-2 w-[100px] text-center p-2 rounded-lg hover:bg-red-500 hover:text-white transition-transform `}
        >
         مشاهده
