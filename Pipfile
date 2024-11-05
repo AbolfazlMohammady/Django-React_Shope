@@ -9,6 +9,12 @@ djangorestframework = "*"
 djangorestframework-simplejwt = "*"
 djoser = "*"
 django-debug-toolbar = "*"
+django-phonenumber-field = "*"
+phonenumbers = "*"
+drf-nested-routers = "*"
+pillow = "*"
+django-filter = "*"
+pymemcache = "*"
 
 [dev-packages]
 
