@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../container/Container";
 function Footer() {
   return (
@@ -62,9 +61,13 @@ function Footer() {
 
 export default Footer;
 
-function H1({ children }) {
+type props = {
+  children:React.ReactNode
+}
+
+function H1({ children }: props) {
   return <h1 className="text-lg font-bold">{children} </h1>;
 }
-function P({ children }) {
+function P({ children }: props) {
   return <p className="text-base text-slate-500 ">{children}</p>;
 }
