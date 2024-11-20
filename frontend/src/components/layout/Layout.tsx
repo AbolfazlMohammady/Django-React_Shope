@@ -8,11 +8,11 @@ interface ILayout {
 
 function Layout({ children }: ILayout) {
   return (
-    <>
+    <div className=" bg-slate-50 text-gray-700 ">
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }
 
