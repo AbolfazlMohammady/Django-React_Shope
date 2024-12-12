@@ -11,7 +11,7 @@ function Navbar() {
     <div className=" border-b shadow flex items-center py-2">
       <Container>
         <div className="flex  flex-row-reverse items-center p-3">
-          <ul className="w-full md:w-[70%]  px-2 flex gap-8 flex-wrap justify-end items-center flex-row">
+          <ul className="w-full md:w-[90%] px-2 flex gap-8 flex-wrap justify-end items-center flex-row">
             <NavbarLiItems nameItem="پوشاک" />
             <NavbarLiItems nameItem="لوازم آرایشی" />
             <NavbarLiItems nameItem="سلامت" />
@@ -39,13 +39,13 @@ function NavbarLiItems({ nameItem }: NavbarLiItemsProps) {
 
   return (
     <li
-      className="w-max flex text-nowrap text-[14px] items-center relative"
+      className="w-max flex text-nowrap text-[14px] md:text-[16px] items-center relative"
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
       <span>
         <FaCaretDown
-          className="mt-[6px] "
+          className="mr-[3px] "
           style={{
             transform: showPopup ? "rotate(180deg)" : "rotate(0deg)",
             transition: "transform 0.5s ease-in-out",

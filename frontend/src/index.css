@@ -18,3 +18,18 @@ body{
     color: black;
     font-size: 30px;
 }
+
+
+
+.bg{
+    @apply bg-violet-600 text-white 
+}
+.bg2{
+    @apply bg-violet-700 bg-opacity-20 placeholder:text-violet-900
+}
+.bor{
+    @apply border-b border-violet-600
+}
+.text{
+    @apply text-violet-600
+}
