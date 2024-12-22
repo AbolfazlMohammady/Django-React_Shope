@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     "debug_toolbar",
     'djoser',
     'django_filters',
+    'drf_yasg',
+
 
 
 
