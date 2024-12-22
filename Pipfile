@@ -16,6 +16,7 @@ pillow = "*"
 django-filter = "*"
 pymemcache = "*"
 drf-yasg = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
